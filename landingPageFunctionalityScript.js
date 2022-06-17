@@ -1,7 +1,8 @@
+//
 function InitializeFunctionsAndInteractions()
 {
     SetSkillsContent('art');
-    InitializeHomeSectionContent();
+    //InitializeHomeSectionContent();
 }
 
   
@@ -75,10 +76,10 @@ var SectionContentShift = setInterval(function()
 function InitializeHomeSectionContent()
 {
     //document.getElementById("home-img").src = homeSectionImgArray[homeImgCycleCount - 1];
-    document.getElementById("home-project-title").innerHTML = homeSectionTitleArray[projectCount - 1];
-    document.getElementById("home-project-description").innerHTML = homeSectionDescArray[projectCount - 1];
+    //document.getElementById("home-project-title").innerHTML = homeSectionTitleArray[projectCount - 1];
+    //document.getElementById("home-project-description").innerHTML = homeSectionDescArray[projectCount - 1];
 }
-
+/*
 function HomeSectionContentShift()
 {
     if(homeImgCycleCount < maxImgCount)
@@ -133,7 +134,7 @@ function HomeSectionContentShift()
             });
         });
     }
-}
+}*/
   
 
 // ****************************** Services Functions and Interactions ****************************** //

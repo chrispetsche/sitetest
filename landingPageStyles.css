@@ -48,6 +48,9 @@
 .home-stationary-text{
     text-align: center;
     margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 17.5px;
 }
 
 #home-invite-to-view-more{
@@ -73,6 +76,29 @@
     padding: 0;
     text-shadow: 0 0 5px #3700ff, 0 0.125em 10px #6868f7;
 }
+
+/* Flaired edges, by Tomas Theunissen */
+.home hr{
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: rgb(81, 112, 253);
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.home hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -26px;
+    border-style: solid;
+    border-color: rgb(81, 112, 253);
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
 
 .home .home-content .text-2 span{
     color: rgb(20, 140, 220);
@@ -553,7 +579,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 
-.contact .contact-content .left p{
+.contact .contact-content p{
     color: #fff;
     text-align: justify;
 }
@@ -687,6 +713,10 @@ section .title::after{
         margin-left: 0px;
     }
 
+    .home {
+        height: 140vh;
+    }
+
     .about .about-content .left img{
         height: 425px;
         width: 250px;
@@ -760,34 +790,44 @@ section .title::after{
     .home .home-content a{
         font-size: 20px;
     }
+
+    .skills-content .right .skill-page-dot{
+        height: 10px;
+        width: 10px;
+        margin: 0 1.5px;
+    }
 }
 
 @media (max-width: 500px){
     .home {
-        height: 135vh;
+        height: 145vh;
+    }
+
+    .home .home-content .home-img-container img{
+        width: 75%;
     }
 }
 
 @media (max-width: 400px){
     .home {
-        height: 140vh;
+        height: 150vh;
     }
 }
 
 @media (max-width: 370px){
     .home {
-        height: 145vh;
+        height: 155vh;
     }
 }
 
 @media (max-width: 360px){
     .home {
-        height: 155vh;
+        height: 165vh;
     }
 }
 
 @media (max-width: 335px){
     .home {
-        height: 165vh;
+        height: 175vh;
     }
 }
